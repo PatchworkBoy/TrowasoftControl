@@ -37,7 +37,7 @@ In Seq mode, it's obvious. In MixMode Red rows = MUTE, Green rows = SOLO, Orange
 * Row 8: Shapemaster triggers 1 thru 8. 1 & 2 mapped to VCF. 3 - 5 mapped to BGA VCAs for 8th / 16th / 32nd beat chopper effect.
 * (NB: Shapemaster PRO lets you hook shapemaster to your clock and sync it up)
 
-Warning: a quirk of the Stoermelder MIDI mapping plugin vs Trowasoft's changing display means you sometimes need to double tap buttons to toggle them in Sequencer mode - this happens using any MIDI controller. In mixer mode, everything should work on first press.
+Warning: a quirk of the Stoermelder MIDI mapping plugin vs Trowasoft's changing display means you sometimes need to double tap buttons to toggle them in Sequencer mode after changing channels - this happens using any MIDI controller. In mixer mode, everything should work on first press.
 
 ![Trellis Surface](https://github.com/PatchworkBoy/TrowasoftControl/blob/2d93fae6dd7e0de539dddfe12de9ac80c5b626c4/media/MixControl.jpg)
 
@@ -54,13 +54,14 @@ Warning: a quirk of the Stoermelder MIDI mapping plugin vs Trowasoft's changing 
 * Count Modula Chances: https://library.vcvrack.com/?query=Chances&brand=Count+Modula&tag=&license= 
 * Bog Audio Mix2: https://library.vcvrack.com/?query=Mix2&brand=Bogaudio&tag=&license=
 * Befaco KickALL: https://library.vcvrack.com/Befaco/Kickall
+* AS Reverb Stereo FX: https://library.vcvrack.com/?query=Reverb+Stereo&brand=AS&tag=&license=
 * Inklen Cable Colour Key: https://library.vcvrack.com/?query=&brand=Inklen&tag=&license=
 
 
 # IMPORTANT
 Do these steps FIRST before opening the vcvrack sample file to avoid losing the pre-done MIDI Mappings.
 
-* Subscribe to MindMelder, Impromptu, SV Modular, Count Modula, Bog Audio, Befaco and Inklen plugins from the VCV Library - https://library.vcvrack.com
+* Subscribe to MindMelder, Impromptu, SV Modular, Count Modula, Bog Audio, Befaco, AS and Inklen plugins from the VCV Library - https://library.vcvrack.com
 * Get the Stoermelder Dev build for your platform from links at bottom of the page at Stoermelder PACK-ONE v2-Dev repo link above. Place the .vcvplugin file in Rack/plugins (on MacOS, usually ~/Documents/Rack/plugins ... not sure about Windows - sorry!)
 * Get the Trowasoft dev build from the link above. Extract the zip. Place the extracted folder in Rack/plugins (on MacOS, usually ~/Documents/Rack/plugins ... not sure about Windows - sorry!)
 
