@@ -12,4 +12,4 @@ Arduino sketches in C++ using regular Arduino stack and MIDIUSB (https://github.
 
 ![Adafruit NeoTrellis 8x8 and NeoTrellisM4](https://github.com/PatchworkBoy/TrowasoftControl/blob/3362476d3a1776453b7b238ee099932958ca3c74/media/8x8%20and%204x8.jpg)
 
-![VCVRack Patch](https://github.com/PatchworkBoy/TrowasoftControl/blob/3362476d3a1776453b7b238ee099932958ca3c74/media/vcvrack.jpg)
+![VCVRack Patch](https://github.com/PatchworkBoy/TrowasoftControl/blob/959118bad4653d588e2d4e5e872be8c08393e04d/media/vcvrack.jpg)
