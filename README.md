@@ -3,7 +3,8 @@ Set of Arduino sketches for Neotrellis 8x8 Feather M4 Express &amp; NeoTrellisM4
 
 Arduino sketches in C++ using regular Arduino stack and MIDIUSB (https://github.com/arduino-libraries/MIDIUSB), as seems to be the most responsive & latency free method of doing it.
 
-* Video demo: https://www.youtube.com/watch?v=a8XQVMCNVKE
+* Video demo: https://www.youtube.com/watch?v=a8XQVMCNVKE (pre-MixMode addition)
+* Video demo2: https://www.youtube.com/watch?v=XsOMpJZBjNU (post-MixMode addition)
 
 ![Adafruit NeoTrellis 8x8 and NeoTrellisM4](https://github.com/PatchworkBoy/TrowasoftControl/blob/3362476d3a1776453b7b238ee099932958ca3c74/media/8x8%20and%204x8.jpg)
 
