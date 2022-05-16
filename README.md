@@ -6,6 +6,8 @@ Arduino sketches in C++ using regular Arduino stack and MIDIUSB (https://github.
 * Video demo: https://www.youtube.com/watch?v=a8XQVMCNVKE (pre-MixMode addition)
 * Video demo2: https://www.youtube.com/watch?v=XsOMpJZBjNU (post-MixMode addition)
 
+
+
 ![Adafruit NeoTrellis 8x8 and NeoTrellisM4](https://github.com/PatchworkBoy/TrowasoftControl/blob/3362476d3a1776453b7b238ee099932958ca3c74/media/8x8%20and%204x8.jpg)
 
 ![VCVRack Patch](https://github.com/PatchworkBoy/TrowasoftControl/blob/959118bad4653d588e2d4e5e872be8c08393e04d/media/vcvrack.jpg)
@@ -13,7 +15,9 @@ Arduino sketches in C++ using regular Arduino stack and MIDIUSB (https://github.
 
 Now with additional pre-mapped MixMode for MindMeld MixMaster and Auxspander... and Shapemaster triggers.
 
+
 # Neotrellis M4
+
 * NeoTrellis 4x8 M4: https://www.adafruit.com/product/4020 (Still available as separate parts; board, case, polymer keypads, from The Pi Hut)
 ...in portrait mode with connector to the right.
 
@@ -28,18 +32,20 @@ MixMode...
 
 ![Transport Control](https://github.com/PatchworkBoy/TrowasoftControl/blob/2d93fae6dd7e0de539dddfe12de9ac80c5b626c4/media/TransportControl.jpg)
 
+
 # Neotrellis 8x8 Feather M4 Express
+
 * NeoTrellis 8x8 Feather M4 Express: https://www.adafruit.com/product/1929
 
 Driving the 8x8 in Seq mode is fairly obvious, with the caveat that you occasionally need to double tap buttons to get them to toggle due to something quirky between Trowasoft's sequencer display and Stoermelder's MIDI-CAT. This happens with any MIDI controller - it's not due to anything in the Neotrellis sketches.
 
-In MixMode Red rows = MUTE, Green rows = SOLO, Orange row = TRIGGERS (hooked up to Shapemaster), and everything should toggle on first press without problems.
+In MixMode: Red rows = MUTE, Green rows = SOLO, Orange row = TRIGGERS (hooked up to Shapemaster), and everything should toggle on first press without problems.
 
 * Rows 1 - 4: Channels 1-16 of MixMaster
 * Rows 5 & 6: Groups 1-4 of MixMaster, Aux Returns 1-4 of Auxspander
-* Row 7: MixMaster Master Mute (1), Dim (2), Mono (3), Impromptu Clocked Reset (7) and Run (8)
+* Row 7: MixMaster Master Mute (1), Dim (2), Mono (3), Impromptu Clocked Reset (7) and Run (8). 4-6 are free to remap to whatever.
 * Row 8: Shapemaster triggers 1 thru 8. 1 & 2 mapped to VCF. 3 - 5 mapped to BGA VCAs for 8th / 16th / 32nd beat chopper effect.
-* (NB: Shapemaster PRO lets you hook shapemaster to your clock and sync it up)
+* (NB: Shapemaster PRO lets you hook it to your clock and sync it up)
 
 ![Trellis Surface](https://github.com/PatchworkBoy/TrowasoftControl/blob/2d93fae6dd7e0de539dddfe12de9ac80c5b626c4/media/MixControl.jpg)
 
