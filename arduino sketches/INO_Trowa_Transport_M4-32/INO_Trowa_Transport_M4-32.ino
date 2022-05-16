@@ -54,51 +54,43 @@ void nOff(byte channel, byte pitch, byte velocity) {
   midiEventPacket_t nOff = {0x08, 0x80 | channel, pitch, velocity};
   MidiUSB.sendMIDI(nOff);
 }
+void nOn(byte channel, byte pitch, byte velocity) {
+  midiEventPacket_t nOn = {0x09, 0x90 | channel, pitch, velocity};
+  MidiUSB.sendMIDI(nOn);
+}
 void loop() {
   // put your main code here, to run repeatedly:
-  trellis.tick();
-//  midiEventPacket_t rx;
-//  do {
-//    rx = MidiUSB.read();
-//    if (rx.header != 0) {
-//      auto type1 = rx.header & 0x0F;
-//      auto type2 = rx.byte1 & 0xF0;
-//      uint8_t note = rx.byte2;
-//      auto key = note - 36;
-//      uint8_t vel = rx.byte3;
-//      uint8_t c = (rx.byte1 & 0x0F) + 1; // channel
-//      if (type1 == 0x08 && type2 == 0x80) {
-//            trellis.setPixelColor(key, 0x0);
-//        }
-//        if (type1 == 0x09 && type2 == 0x90) {
-//            if (rx.byte3) {
-//                trellis.setPixelColor(key, Wheel(key*8));
-//            } else {
-//                trellis.setPixelColor(key, 0x0);
-//            }
-//        }
-//    }
-//  } while (rx.header != 0);
-  
+  trellis.tick();  
   while (trellis.available()){
     keypadEvent e = trellis.read();
-    int key = e.bit.KEY;
-    if (e.bit.EVENT == KEY_JUST_PRESSED) {
-      if (key >= 16) {
-        allOff();
-      } else if (key >= 8) {
-        playOff();
-      } else if (key >= 0) {
-        editOff();
-      }
-      trellis.show();
-      trellis.setPixelColor(key, Wheel(key*8));
-      trellis.noteOn(FIRST_MIDI_NOTE+key, 64);
+    if (trellis.isPressed(24) && trellis.isPressed(16)){
+      Serial.println("MENU COMBO PRESSED");
+      trellis.noteOn(127, 64);
       delay(5);
-      nOff(1, FIRST_MIDI_NOTE+key, 64);
-    }
-    else if (e.bit.EVENT == KEY_JUST_RELEASED) {
-      // ignore!
+      nOff(1, 127, 64);
+    } else if (trellis.isPressed(23) && trellis.isPressed(31)){
+      trellis.noteOn(126, 64);
+      delay(5);
+      nOff(1, 126, 64);
+    } else {
+      int key = e.bit.KEY;
+      if (e.bit.EVENT == KEY_JUST_PRESSED) {
+        if (key >= 16) {
+          allOff();
+        } else if (key >= 8) {
+          playOff();
+        } else if (key >= 0) {
+          editOff();
+        }
+        trellis.show();
+        trellis.setPixelColor(key, Wheel(key*8));
+        trellis.noteOn(FIRST_MIDI_NOTE+key, 64);
+        delay(5);
+        nOff(1, FIRST_MIDI_NOTE+key, 64);
+      }
+      else if (e.bit.EVENT == KEY_JUST_RELEASED) {
+        // ignore!
+      }
     }
   }
 
