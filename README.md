@@ -17,32 +17,33 @@ Now with additional pre-mapped MixMode for MindMeld MixMaster and Auxspander... 
 ...in portrait mode with connector to the right.
 
 Sequencer mode (default)...
-* Cols 1 & 2 choose Channel 1-16 in Trowasoft MultiSeq, 1-8 top to bottom on Col1, 9-16 top to bottom on Col2. 
+* Cols 1 & 2 choose Channel 1-16 in Trowasoft MultiSeq (1-8 top to bottom on Col1, 9-16 top to bottom on Col2) and displays on NeoTrellis 8x8. 
 * Col 3 sets the currently playing pattern from 1-8.
-* Col 4 sets the pattern you're editing on the NeoTrellis 8x8
+* Col 4 sets the pattern you're editing on the NeoTrellis 8x8.
 
-MixMode..
+MixMode...
 * Simultaneously press the top keys of Col1 & Col2 to enter MixMode. 
-* Simultaneously press the bottom keys of Col1 & Col2 to exit MixMode.
+* Simultaneously press the bottom keys of Col1 & Col2 to exit MixMode - you'll probably end up on Ch9 or 16 of the sequencer depending which key went down first. Just tap to whatever channel you want...
 
 ![Transport Control](https://github.com/PatchworkBoy/TrowasoftControl/blob/2d93fae6dd7e0de539dddfe12de9ac80c5b626c4/media/TransportControl.jpg)
 
 # Neotrellis 8x8 Feather M4 Express
 * NeoTrellis 8x8 Feather M4 Express: https://www.adafruit.com/product/1929
 
-In Seq mode, it's obvious. In MixMode Red rows = MUTE, Green rows = SOLO, Orange row = TRIGGERS (hooked up to Shapemaster)
-* Rows 1 thru 4: Channels 1-16 of MixMaster
+Driving the 8x8 in Seq mode is fairly obvious, with the caveat that you occasionally need to double tap buttons to get them to toggle due to something quirky between Trowasoft's sequencer display and Stoermelder's MIDI-CAT. This happens with any MIDI controller, it's not due to anything in the NEotrellis code.
+
+In MixMode Red rows = MUTE, Green rows = SOLO, Orange row = TRIGGERS (hooked up to Shapemaster), and everything should toggle on first press without problems.
+
+* Rows 1 - 4: Channels 1-16 of MixMaster
 * Rows 5 & 6: Groups 1-4 of MixMaster, Aux Returns 1-4 of Auxspander
 * Row 7: MixMaster Master Mute (1), Dim (2), Mono (3), Impromptu Clocked Reset (7) and Run (8)
 * Row 8: Shapemaster triggers 1 thru 8. 1 & 2 mapped to VCF. 3 - 5 mapped to BGA VCAs for 8th / 16th / 32nd beat chopper effect.
 * (NB: Shapemaster PRO lets you hook shapemaster to your clock and sync it up)
 
-Warning: a quirk of the Stoermelder MIDI mapping plugin vs Trowasoft's changing display means you sometimes need to double tap buttons to toggle them in Sequencer mode after changing channels - this happens using any MIDI controller. In mixer mode, everything should work on first press.
-
 ![Trellis Surface](https://github.com/PatchworkBoy/TrowasoftControl/blob/2d93fae6dd7e0de539dddfe12de9ac80c5b626c4/media/MixControl.jpg)
 
 
-# Software
+# Required Software
 
 * VCVRack2: https://vcvrack.com/Rack#get (+ Fundamentals)
 * Stoermelder PACK-ONE Dev Builds: https://github.com/stoermelder/vcvrack-packone/releases/tag/Nightly
@@ -63,7 +64,7 @@ Do these steps FIRST before opening the vcvrack sample file to avoid losing the 
 
 * Subscribe to MindMelder, Impromptu, SV Modular, Count Modula, Bog Audio, Befaco, AS and Inklen plugins from the VCV Library - https://library.vcvrack.com
 * Get the Stoermelder Dev build for your platform from links at bottom of the page at Stoermelder PACK-ONE v2-Dev repo link above. Place the .vcvplugin file in Rack/plugins (on MacOS, usually ~/Documents/Rack/plugins ... not sure about Windows - sorry!)
-* Get the Trowasoft dev build from the link above. Extract the zip. Place the extracted folder in Rack/plugins (on MacOS, usually ~/Documents/Rack/plugins ... not sure about Windows - sorry!)
+* Get the Trowasoft dev build for your platform from the link above. Extract the zip. Place the extracted folder in Rack/plugins (on MacOS, usually ~/Documents/Rack/plugins ... not sure about Windows - sorry!)
 
 Flash your Neotrellii and plug 'em in.
 
