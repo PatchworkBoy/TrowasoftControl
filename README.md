@@ -31,7 +31,7 @@ MixMode...
 # Neotrellis 8x8 Feather M4 Express
 * NeoTrellis 8x8 Feather M4 Express: https://www.adafruit.com/product/1929
 
-Driving the 8x8 in Seq mode is fairly obvious, with the caveat that you occasionally need to double tap buttons to get them to toggle due to something quirky between Trowasoft's sequencer display and Stoermelder's MIDI-CAT. This happens with any MIDI controller, it's not due to anything in the NEotrellis code.
+Driving the 8x8 in Seq mode is fairly obvious, with the caveat that you occasionally need to double tap buttons to get them to toggle due to something quirky between Trowasoft's sequencer display and Stoermelder's MIDI-CAT. This happens with any MIDI controller - it's not due to anything in the Neotrellis sketches.
 
 In MixMode Red rows = MUTE, Green rows = SOLO, Orange row = TRIGGERS (hooked up to Shapemaster), and everything should toggle on first press without problems.
 
