@@ -3,6 +3,8 @@ Set of Arduino sketches for Neotrellis 8x8 Feather M4 Express &amp; NeoTrellisM4
 
 Arduino sketches in C++ using regular Arduino stack and MIDIUSB (https://github.com/arduino-libraries/MIDIUSB), as seems to be the most responsive & latency free method of doing it.
 
+UPDATE: The NEXT revision (in progress!) will do away with necessity for a NeoTrellisM4 (4x8), altho it's still my personal preferred method for controlling the 8x8, and also brings 8x pages (mapped to MIDI Chs 1-8) for the 8x8, to be expanded to 15 pages (mapped to Ch1-15) in the future. With all menu/page control for the 8x8 taking place solely on Ch16.
+
 * Video demo: https://www.youtube.com/watch?v=a8XQVMCNVKE (pre-MixMode addition)
 * Video demo2: https://www.youtube.com/watch?v=XsOMpJZBjNU (post-MixMode addition)
 
@@ -72,6 +74,7 @@ Do these steps FIRST before opening the vcvrack sample file to avoid losing the 
 * Subscribe to MindMelder, Impromptu, SV Modular, Count Modula, Bog Audio, Befaco, AS and Inklen plugins from the VCV Library - https://library.vcvrack.com
 * Get the Stoermelder Dev build for your platform from links at bottom of the page at Stoermelder PACK-ONE v2-Dev repo link above. Place the .vcvplugin file in Rack/plugins (on MacOS, usually ~/Documents/Rack/plugins ... not sure about Windows - sorry!)
 * Get the Trowasoft dev build for your platform from the link above. Extract the zip. Place the extracted folder in Rack/plugins (on MacOS, usually ~/Documents/Rack/plugins ... not sure about Windows - sorry!)
+* Launch VCVRack... Library > Update All
 
 Flash your Neotrellii and plug 'em in.
 
