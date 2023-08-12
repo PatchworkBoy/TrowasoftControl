@@ -55,8 +55,8 @@ In MixMode: Red rows = MUTE, Green rows = SOLO, Orange row = TRIGGERS (hooked up
 # Required Software
 
 * VCVRack2: https://vcvrack.com/Rack#get (+ Fundamentals)
-* Stoermelder PACK-ONE Dev Builds: https://github.com/stoermelder/vcvrack-packone/releases/tag/Nightly
-* Trowasoft-VCV: https://github.com/j4s0n-c/trowaSoft-VCV/releases/tag/v2.0.4-alpha
+* Stoermelder PACK-ONE: https://library.vcvrack.com/Stoermelder-P1
+* Trowasoft-VCV: https://library.vcvrack.com/trowaSoft
 * MindMeld: https://library.vcvrack.com/?query=&brand=MindMeld&tag=&license=
 * Impromptu Clocked: https://library.vcvrack.com/ImpromptuModular/Clocked
 * Impromptu CV-Pad: https://library.vcvrack.com/ImpromptuModular/Cv-Pad
@@ -71,9 +71,7 @@ In MixMode: Red rows = MUTE, Green rows = SOLO, Orange row = TRIGGERS (hooked up
 # IMPORTANT
 Do these steps FIRST before opening the vcvrack sample file to avoid losing the pre-done MIDI Mappings.
 
-* Subscribe to MindMelder, Impromptu, SV Modular, Count Modula, Bog Audio, Befaco, AS and Inklen plugins from the VCV Library - https://library.vcvrack.com
-* Get the Stoermelder Dev build for your platform from links at bottom of the page at Stoermelder PACK-ONE v2-Dev repo link above. Place the .vcvplugin file in Rack/plugins (on MacOS, usually ~/Documents/Rack/plugins ... not sure about Windows - sorry!)
-* Get the Trowasoft dev build for your platform from the link above. Extract the zip. Place the extracted folder in Rack/plugins (on MacOS, usually ~/Documents/Rack/plugins ... not sure about Windows - sorry!)
+* Subscribe to Stoermelder, Trowasoft, MindMelder, Impromptu, SV Modular, Count Modula, Bog Audio, Befaco, AS and Inklen plugins from the VCV Library - https://library.vcvrack.com
 * Launch VCVRack... Library > Update All
 
 Flash your Neotrellii and plug 'em in.
